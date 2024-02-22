@@ -15,39 +15,51 @@
 <body class="bg-gray-100">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="relative">
-            <div class="flex flex-wrap items-center justify-between w-full bg-white py-7 shrink-0">
+            <div class=" relative flex flex-wrap items-center justify-between w-full bg-white py-7 shrink-0">
                 <div>
                     <img class="h-8" 
                     src="assets\component-1\navigation\cache-bank-logo.png" alt="">
                 </div>
-                <div class="md:flexitems-center justify-between w-full bg-white py-7 shrink-0">
+                <div class=" hidden md:flex items-center justify-between gap-12 text-black">
                     <a href="javascript:void(0)" class="text-sm font-normal text-dark-grey-700 hover:bg-dark-grey-900">Product</a>
                     <a href="javascript:void(0)"class="text-sm font-normal text-dark-grey-700 hover:bg-dark-grey-900">Features</a>
                     <a href="javascript:void(0)"class="text-sm font-normal text-dark-grey-700 hover:bg-dark-grey-900">Get Started</a>
                     <a href="javascript:void(0)"class="text-sm font-normal text-dark-grey-700 hover:bg-dark-grey-900">Contact</a>
                 </div>
-                <div class="md:flex items-center gap-8">
+                <div class="hidden md:flex items-center gap-8">
                     <button class="text-sm font-normal text-dark-grey-800 hover:text-dark-grey-900">Log In</button>
                     <button class="px-4 py-2 font-bold text-blue-950 bg-green-500 rounded-xl hover:bg-pink-500">Sign Up</button>
                 </div>
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         
+                <button class="md:hidden" id="mobile-menu-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="h-6 w-6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+                <div
+                class="absolute flex md:hidden flex-col items-start shadow-main justify-center">
+
+                </div>
+                
+                <script>
+                    document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+                        document.getElementById('mobile-menu').classList.toggle("hidden");
+                    });
+                </script>
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div class="w-full">
             <!-- Wide full-width container for additional content -->
         </div>
